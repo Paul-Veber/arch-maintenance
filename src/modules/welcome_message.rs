@@ -12,7 +12,7 @@ fn check_system() -> String {
 
     let result = match OS {
         "windows" => windows_message,
-        "apple" => apple_messsage,
+        "apple" | "macos" => apple_messsage,
         "linux" => "linux",
         _ => other_unix_message,
     };
